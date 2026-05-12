@@ -14,6 +14,15 @@ let prixProduit = 12.50;
 let nomBoutique = `"La Pizzeria Raffinata"`;
 let blague = `Qu'est-ce qu'une pizza a dit à une autre pizza qui lui demandait des conseils ?\n"Suis ta pâte et tout ira bien !"`;
 
-let SumUpOrderPhrase = "Le " + 	dateCommande.toLocaleDateString("fr") + " :\nBonjour " + civilite + " " + nom + ", votre pizza : " + nomProduit + " est " + statutCommande + ".\nElle vous sera livrée d'ici " + tempsRestant + " minutes au " + adresse + ".\nMerci d'avoir commandé chez " + nomBoutique + ".\n---\n" + blague;
+let SumUpOrderPhrase = "Le " + dateCommande.toLocaleDateString("fr") + " :\nBonjour " + civilite + " " + nom + ", votre pizza : " + nomProduit + " est " + statutCommande + ".\nElle vous sera livrée d'ici " + tempsRestant + " minutes au " + adresse + ".\nMerci d'avoir commandé chez " + nomBoutique + ".\n---\n" + blague;
+
+console.log(SumUpOrderPhrase);
+
+let SumUpOrderPhrase2 = `Le ${dateCommande.toLocaleDateString("fr")} :
+Bonjour ${civilite} ${nom}, votre pizza ${nomProduit} est ${statutCommande}.
+Elle vous sera livrée d'ici ${tempsRestant} minutes au ${adresse}.
+Merci d'avoir commandé chez ${nomBoutique}.
+---
+${blague}`;
 
 console.log(SumUpOrderPhrase);
