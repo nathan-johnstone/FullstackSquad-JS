@@ -66,6 +66,6 @@ function calculerMoyenne2(tab){
     };
 };
 
-let notes = [20, 10, 0, 0];
+let notes = [20, 10];
 
 console.log(calculerMoyenne2(notes));
