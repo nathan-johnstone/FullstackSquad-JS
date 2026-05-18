@@ -4,5 +4,7 @@ console.log(lesTxt);
 let textesTab = Array.from(lesTxt);
 console.log(textesTab);
 
-textesTab.map((a) => a.innerHTML = "J'ai changé")
-textesTab.map((b) => b.style.color = 'red')
+textesTab.map((temp) => {
+    temp.innerHTML = "J'ai changé";
+    temp.style.color = 'red';
+});
