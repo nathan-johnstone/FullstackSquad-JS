@@ -10,11 +10,20 @@ const userData = {
 };
 
 const userProfile = document.querySelector('#profile');
-userProfile.style.background = "linear-gradient(45deg, rgb(65, 89, 208) 0%, rgb(200, 79, 192) 50%, rgb(255, 205, 112) 100%)";
-userProfile.style.margin = "0 auto";
-userProfile.style.padding = "20px";
-userProfile.style.width = "400px";
-userProfile.style.color = "#fff";
+
+// userProfile.style.background = "linear-gradient(45deg, rgb(65, 89, 208) 0%, rgb(200, 79, 192) 50%, rgb(255, 205, 112) 100%)";
+// userProfile.style.margin = "0 auto";
+// userProfile.style.padding = "20px";
+// userProfile.style.width = "400px";
+// userProfile.style.color = "#fff";
+
+userProfile.style.cssText = `
+  background: linear-gradient(45deg, rgb(65, 89, 208) 0%, rgb(200, 79, 192) 50%, rgb(255, 205, 112) 100%);
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  color: #fff;
+`;
 
 const userAvatar = document.createElement('img');
 userAvatar.src = userData.img;
@@ -27,8 +36,6 @@ userName.style.margin = "10px 0";
 userName.style.fontWeight = "bold";
 userName.style.fontSize = "1.5em";
 userProfile.appendChild(userName);
-
-
 
 const userEmail = document.createElement('p');
 userEmail.innerText = userData.email;
