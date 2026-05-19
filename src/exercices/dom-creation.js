@@ -43,5 +43,14 @@ userDob.innerText = userData.dob;
 userProfile.appendChild(userDob);
 
 const userActive = document.createElement('p');
-userActive.innerText = userData.active;
+
+// if(userData.active === true){
+//     userActive.innerText = "online";
+// }else{
+//     userActive.innerText = "offline";    
+// }
+// userProfile.appendChild(userActive);
+
+let status = (userData.active === true) ? "online" : "offline";
+userActive.innerText = status;
 userProfile.appendChild(userActive);
