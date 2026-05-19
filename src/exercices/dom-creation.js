@@ -10,7 +10,7 @@ const userData = {
 };
 
 const userProfile = document.querySelector('#profile');
-userProfile.style.background = "linear-gradient(-135deg, rgb(250, 218, 97) 0%, rgb(255, 145, 136) 50%, rgb(255, 90, 205) 100%)";
+userProfile.style.background = "linear-gradient(45deg, rgb(65, 89, 208) 0%, rgb(200, 79, 192) 50%, rgb(255, 205, 112) 100%)";
 userProfile.style.margin = "0 auto";
 userProfile.style.padding = "20px";
 userProfile.style.width = "400px";
