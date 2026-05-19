@@ -63,3 +63,17 @@ const userActive = document.createElement('p');
 userActive.innerText = (userData.active === true) ? "online" : "offline";
 
 userProfile.appendChild(userActive);
+
+
+const liste = document.querySelector('#liste');
+
+function ajouterTexte(pseudo, duTexte){
+    const texte = document.createElement('p');
+    texte.innerHTML = "<b>" + pseudo + "</b> - " + duTexte;
+    return texte;
+};
+
+liste.appendChild(ajouterTexte("Daniel", "Gracia"));
+liste.appendChild(ajouterTexte("Jarry", "Borne"));
+liste.appendChild(ajouterTexte("JCVD", "OK"));
+liste.appendChild(ajouterTexte("Dongue", "Rodrigue"));
