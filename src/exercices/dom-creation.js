@@ -49,8 +49,10 @@ const userActive = document.createElement('p');
 // }else{
 //     userActive.innerText = "offline";    
 // }
-// userProfile.appendChild(userActive);
 
-let status = (userData.active === true) ? "online" : "offline";
-userActive.innerText = status;
+// let status = (userData.active === true) ? "online" : "offline";
+// userActive.innerText = status;
+
+userActive.innerText = (userData.active === true) ? "online" : "offline";
+
 userProfile.appendChild(userActive);
