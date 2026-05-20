@@ -20,8 +20,9 @@ document.addEventListener('click', (eventOnClick) => {
     document.body.appendChild(image);
     image.style.display = "block";
     image.style.position = "absolute";
-    // image.style.top = yPos + "px";
-    // image.style.left = xPos + "px";
-    image.style.top = "calc(" + yPos + "px - 100px)";
-    image.style.left = "calc(" + xPos + "px - 100px)";
+    image.style.top = yPos + "px";
+    image.style.left = xPos + "px";
+    // image.style.top = "calc(" + yPos + "px - 100px)";
+    // image.style.left = "calc(" + xPos + "px - 100px)";
+    image.style.translate = "-50% -50%";
 });
