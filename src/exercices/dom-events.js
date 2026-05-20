@@ -12,17 +12,27 @@ btnAjouter.addEventListener('click', () => titre.classList.add("class"));
 btnSupprimer.addEventListener('click', () => titre.classList.remove("class"));
 btnToggle.addEventListener('click', () => titre.classList.toggle("class"));
 
-document.addEventListener('click', (eventOnClick) => {
-    let xPos = eventOnClick.x;
-    let yPos = eventOnClick.y;
-    const image = document.createElement('img');
-    image.src = "https://picsum.photos/200";
-    document.body.appendChild(image);
-    image.style.display = "block";
-    image.style.position = "absolute";
-    image.style.top = yPos + "px";
-    image.style.left = xPos + "px";
-    // image.style.top = "calc(" + yPos + "px - 100px)";
-    // image.style.left = "calc(" + xPos + "px - 100px)";
-    image.style.translate = "-50% -50%";
+// document.addEventListener('click', (eventOnClick) => {
+//     let xPos = eventOnClick.x;
+//     let yPos = eventOnClick.y;
+//     const image = document.createElement('img');
+//     image.src = "https://picsum.photos/200";
+//     document.body.appendChild(image);
+//     image.style.display = "block";
+//     image.style.position = "absolute";
+//     image.style.top = yPos + "px";
+//     image.style.left = xPos + "px";
+//     // image.style.top = "calc(" + yPos + "px - 100px)";
+//     // image.style.left = "calc(" + xPos + "px - 100px)";
+//     image.style.translate = "-50% -50%";
+// });
+
+const input = document.querySelector('input');
+input.addEventListener('focus', (event) =>{
+    input.style.background = "#4269e1";
+    input.style.color = "#fff";
+});
+input.addEventListener('blur', (event) =>{
+    input.style.background = "inherit";
+    input.style.color = "inherit";
 });
