@@ -6,7 +6,7 @@ element.addEventListener('click', () => {(element.innerText == content) ? elemen
 const btnAjouter = document.querySelector('#ajouter');
 const btnSupprimer = document.querySelector('#supprimer');
 const btnToggle = document.querySelector('#toggle');
-const titre = document.querySelector('h2')
+const titre = document.querySelector('h2');
 
 btnAjouter.addEventListener('click', () => titre.classList.add("class"));
 btnSupprimer.addEventListener('click', () => titre.classList.remove("class"));
