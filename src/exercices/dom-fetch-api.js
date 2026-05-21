@@ -14,13 +14,14 @@ const apiPokemon =  async () => {
         // console.log(data);
         // console.log(data.results);
 
-        data.results.forEach(element => {
+        data.results.forEach(pokemon => {
             // console.log(element.name);
-            
-            const afficherPoke = document.createElement('li');
-            afficherPoke.innerText = element.name;
-            afficherPoke.style.margin = "10px"
-            apiPoke.appendChild(afficherPoke);
+
+            apiPoke.innerHTML += `<li>${pokemon.name}</li>`;
+
+            // const liste = document.createElement('li');
+            // liste.innerText = pokemon.name;
+            // apiPoke.appendChild(liste);
         });
 
     } catch (error) {
