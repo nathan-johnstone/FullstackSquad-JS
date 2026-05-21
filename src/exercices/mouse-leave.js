@@ -6,3 +6,6 @@ document.addEventListener("mouseleave", () => {
         info.style.color = "red";
         info.style.background = "lime";
 });
+document.addEventListener("mouseover", () => {
+        info.style.display = "none";
+});
