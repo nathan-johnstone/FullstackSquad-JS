@@ -52,4 +52,4 @@ const apiNorris = async () => {
     }
 }
 
-document.querySelector('button').addEventListener('click', () => apiNorris());
+document.querySelector('button').addEventListener('click', apiNorris);
