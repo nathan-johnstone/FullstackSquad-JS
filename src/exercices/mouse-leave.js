@@ -9,3 +9,11 @@ document.addEventListener("mouseleave", () => {
 document.addEventListener("mouseover", () => {
         info.style.display = "none";
 });
+
+// let inputTexte = document.querySelector('input').value;
+// let rendu = document.querySelector('#renderKeyboard');
+// const texte = document.querySelector('input');
+
+// document.addEventListener("keyup", () => {
+//     rendu.innerHTML = inputTexte
+// });
