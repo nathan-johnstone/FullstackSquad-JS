@@ -1,0 +1,8 @@
+const info = document.querySelector('#gagnant');
+document.addEventListener("mouseleave", () => {
+        info.style.display = "block";
+        info.style.marginTop = "50px";
+        info.style.textAlign = "center";
+        info.style.color = "red";
+        info.style.background = "lime";
+});
