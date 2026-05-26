@@ -28,5 +28,6 @@ document.addEventListener("keyup", () => {
     } else {
         submit.disabled = false;
         submit.style.background = "none";
+        submit.style.cursor = "not-allowed";
     }
 });
