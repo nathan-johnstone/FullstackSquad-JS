@@ -17,3 +17,16 @@ const texte = document.querySelector('input');
 document.addEventListener("keyup", () => {
     rendu.innerHTML = inputTexte.value;
 });
+
+const submit = document.querySelector('button');
+const textInput = document.querySelector('textarea');
+
+document.addEventListener("keyup", () => {
+    if (textInput.value.length >= 5){
+        submit.disabled = true;
+        submit.style.background = "darkgray";
+    } else {
+        submit.disabled = false;
+        submit.style.background = "none";
+    }
+});

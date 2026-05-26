@@ -13,6 +13,15 @@
         #gagnant{
             display: none;
         }
+        textarea, button{
+            display: block;
+            border: 1px solid #8888;
+            padding: 5px;
+            margin: 10px 0;
+        }
+        button:hover{
+            background: #8883;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +41,11 @@
             <input id="input-exercice-keyup" type="text" class="input input-bordered w-full" placeholder="Type here" value="kebab" />
             <p id="renderKeyboard"></p>
         </fieldset>
+        <form method="POST" action="#">
+            <label for="text">Votre message ici :</label>
+            <textarea id="text" name="text" cols="80" rows="5" required></textarea>
+            <button type="submit">Valider</button>
+        </form>
     </main>
 
 </body>
