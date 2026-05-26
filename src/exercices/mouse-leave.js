@@ -21,13 +21,15 @@ document.addEventListener("keyup", () => {
 const submit = document.querySelector('button');
 const textInput = document.querySelector('textarea');
 
-document.addEventListener("keyup", () => {
-    if (textInput.value.length >= 5){
-        submit.disabled = true;
-        submit.style.background = "darkgray";
-    } else {
-        submit.disabled = false;
-        submit.style.background = "none";
-        submit.style.cursor = "not-allowed";
-    }
-});
+// document.addEventListener("keyup", () => {
+//     if (textInput.value.length >= 5){
+//         submit.disabled = true;
+//         submit.style.background = "darkgray";
+//     } else {
+//         submit.disabled = false;
+//         submit.style.background = "none";
+//         submit.style.cursor = "not-allowed"
+//     }
+// });
+
+document.addEventListener("keyup", () => textInput.value.length >= 5 ? submit.disabled = true : submit.disabled = false );
