@@ -10,5 +10,6 @@ btn.addEventListener('click', () =>{
         }else{
             timer.innerHTML = "GO !";
             clearInterval(intervalID);
+            console.log('here');
         }}, 1000);
 });
