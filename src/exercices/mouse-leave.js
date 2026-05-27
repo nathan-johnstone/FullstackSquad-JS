@@ -32,12 +32,21 @@ const textInput = document.querySelector('textarea');
 //     }
 // });
 
-document.addEventListener("keyup", () => textInput.value.length >= 5 ? submit.disabled = true : submit.disabled = false );
 
-function newStyle(){
-    const page = document.querySelector('html');
-    page.style.background = "blue";
-    page.style.color = "white";
-}
 
-setTimeout(newStyle, 3000);
+// document.addEventListener("keyup", () => textInput.value.length >= 5 ? submit.disabled = true : submit.disabled = false );
+
+
+
+// function newStyle(){
+//     const page = document.querySelector('html');
+//     page.style.background = "blue";
+//     page.style.color = "white";
+// }
+
+// setTimeout(newStyle, 3000);
+
+
+document.addEventListener("keyup", () => {
+    localStorage.setItem('texte', textInput.value);
+});
