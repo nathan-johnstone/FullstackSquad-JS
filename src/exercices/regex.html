@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Regex</title>
+    <script src="regex.js" defer></script>
+    <style>
+        label, input{
+            display: block;
+            margin: 10px 0;
+        }
+        input{
+            border: gray solid 1px;
+        }
+        button{
+            background: lightgray;
+            padding: 5px;
+            &:hover{
+                background: gray;
+            }
+        ul{
+            list-style: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-3xl m-5">DOM + Fetch API</h1>
+    <div class="breadcrumbs text-sm mx-5">
+    <ul>
+        <li><a href="../../index.html">Accueil</a></li>
+        <li>DOM + Fetch API</li>
+    </ul>
+    </div>
+    <div class="divider"></div>
+    <main>
+        <form method="post" action="#">
+            <h2>Connexion</h2>
+            <label for="login-mail">Identifiant</label>
+            <input type="text" id="login-mail" name="login-mail" required>
+            <label for="login-password">Mot de passe</label>
+            <input type="password" id="login-password" name="login-password">
+            <p id="errorSection"></p>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+</body>
+</html>
